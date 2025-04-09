@@ -17,7 +17,7 @@ function App() {
 
   const handleDiscordAuth = () => {
     const clientId = '1359567979700027563';
-    const redirectUri = encodeURIComponent('https://project-ud55.vercel.app/');
+    const redirectUri = encodeURIComponent('https://project-ud55.vercel.app/auth/discord/callback');
     window.location.href = `https://discord.com/api/oauth2/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&response_type=code&scope=identify`;
   };
 
